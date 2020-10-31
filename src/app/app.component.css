@@ -1,17 +1,18 @@
 
-#mainID{ font-size: 50px;}
+#mainID{ font-size: 50px;padding-left: 0 ;padding-right: 0 ;}
   
   .header {
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: #022b21;
+    /*background-color: #022b21;*/
+    background-color: #590995;
   }
   
-  .header h2 {
+  /*.header h2 {
     text-align: center;
-  }
+  }*/
   
   .progress-container {
     width: 100%;
@@ -21,7 +22,7 @@
   
   .progress-bar {
     height: 8px;
-    background: #faf300;
+    background:#de4463; /* #faf300;*/
     width: 0%;
   }
   
@@ -29,4 +30,62 @@
     padding: 100px 0;
     margin: 50px auto 0 auto;
     width: 80%;
+    color: #000;
   }
+
+  nav.about ul li{
+    color: #de4463;display:inline-block; margin:0;text-transform:uppercase;cursor: pointer;
+  }
+
+  nav.about ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #03c4a1;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;      
+  }
+
+  nav.about ul li:hover:after{
+    transform: scaleX(1);
+  }
+  nav.about ul li a:hover {text-decoration: none;}
+  nav.about ul li a{color: #de4463;}
+
+
+ .content-wrapper section {
+     padding:10px;
+    background: rgb(255,255,255,0.5);
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 2px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    transition: background-color 1s;
+    transition-timing-function: linear;
+ }
+
+ .content-wrapper section:hover{
+    background-color: #590995;
+ }
+
+ .content-wrapper section .inner-section-border {border: 1px solid transparent;padding: 10px; border-radius: 2px;background: #f8efd4;}
+
+ .content-wrapper section .inner-section-border .section-label {
+    padding: 10px;
+    display: inline;
+    position: relative;
+    top: -20px;
+    background: #590995;
+    color: #f8efd4;
+ }
+
+ .content-wrapper section .inner-section-border .section-label i:hover{
+    animation: shake 0.5s;
+
+ }
+
+
+
+
+    
